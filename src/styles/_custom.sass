@@ -2,14 +2,19 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 20%
-    right: 10%
+    top: 52%
+    right: 85%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
+    top: 7%
+    right: 12%
+  &-3
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 50%
+    right: 2%
+    
 @keyframes float1
   0%
     transform: translateY(20px)
@@ -23,6 +28,9 @@
 .titulo-principal.color-acento-contenido .titulo-principal__numero span
   color: white !important
 
+.titulo-principal.color-acento-contenido .titulo-principal__numero
+  background-color: #3E6EB4
+
 .banner-interno__titulo__icono i
   color: $color-primario
 
@@ -34,8 +42,8 @@ figcaption
   @media screen and (max-width: $bp-max-xl)
     width: 400px !important
 
-.titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: $color-sistema-texto !important
+.titulo-principal.color-acento-contenido .titulo-principal__numero  span
+  color: withe !important
 .banner-interno__fondo
   background-image: url("../assets/curso/banner_interno.png") !important
 .banner-principal .tarjeta
@@ -43,3 +51,255 @@ figcaption
     background-image: url("../assets/curso/portada/fondo-banner-principal-sm.png") !important
   @media screen and (max-width: $bp-max-sm)
     background-image: url("../assets/curso/portada/fondo-banner-principal-xs.png") !important
+
+
+
+///////////NUEVAS VARIABLES/////////////
+$intro-image-width: 300px
+$intro-image-radius: 15px
+$intro-block-gap: 1rem
+$intro-block-padding: 1rem
+$intro-text-color: #4a4a4a
+
+
+
+// estilos para bloque de introduccion  
+.intro-block
+  display: flex
+  align-items: center
+  gap: 1rem
+  margin-bottom: 1.5rem
+
+  
+
+  &__image
+    flex: 0 0 300px
+    width: 300px
+    height: 108px
+    aspect-ratio: 16/9
+    border-radius: 15px
+    background-size: cover !important
+    background-position: center !important
+    background-repeat: no-repeat
+  
+  &__image-Micro
+    width: 100px
+    height: 115px
+    position: absolute
+    right: 10%
+    top: 36%
+
+  &__image-Masc
+    width: 301px
+    height: 174px
+    position: absolute
+    right: 2%
+    top: 32%
+
+
+  &__image-Pot
+    width: 33%
+    height: 86%
+    left: 50px
+    top: 26px
+    position: absolute
+    background-size: cover !important
+    background-repeat: no-repeat
+
+  &__text-pot
+    
+    top: 23%
+    left: 44%
+    color: #FFFFFF !important
+    position: absolute
+    font-size: 1.75rem
+    font-weight: 1000
+    font-family: 'Roboto', sans-serif
+  
+  &__text-pot2  
+    top: 23%
+    left: 7%
+    color: #000000 !important
+    position: absolute
+    font-size: Large
+    font-weight: 960
+    font-family: 'Roboto', sans-serif
+
+  &__text2
+    
+    p
+    font-family: "Roboto", sans-serif
+    font-size: 1em
+    font-weight: 400
+    line-height: 1.5
+    color: #12263F
+    margin: 37px
+    width: 109%
+
+.azulC
+  background-color: #EDF3FC
+  border-radius: 15px
+  height: 171px
+
+.azulOs
+  background-color: #4E8AE1
+  width: 67%
+  height: 315px
+  position: relative
+  left: 17%
+  border-radius: 15px
+
+.azulBl
+  background-color: #FFFFFF
+  width: 48%
+  height: 40%
+  top: 43%
+  position: relative
+  left: 45%
+  border-radius: 15px
+
+.podcast-content
+  display: flex
+  align-items: center
+  gap: 3rem
+  padding: 2rem
+  width: 100%
+  height: 100%
+
+.podcast-image
+  flex: 0 0 30%
+  width: 30%
+  height: 250px
+  background-size: contain !important
+  background-repeat: no-repeat !important
+  background-position: center !important
+
+.podcast-player
+  flex: 1
+  display: flex
+  flex-direction: column
+  gap: 1rem
+  justify-content: center
+
+.podcast-title
+  font-family: 'Roboto', sans-serif
+  font-size: 2rem
+  font-weight: 700
+  color: #FFFFFF
+  margin: 0
+
+.tarjeta-audio-container
+  background-color: #FFFFFF
+  border: 4px solid #A1C6F2
+  border-radius: 25px
+  padding: 1.5rem
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1)
+  width: 100%
+  max-width: 600px
+  
+  .tarjeta__title
+    display: none
+
+  .tarjeta-audio.texto
+    color: #b80e0e00
+
+  .tarjeta-audio
+    border: none !important
+    box-shadow: none !important
+  
+// Estilos adicionales para Tema1
+
+.contain1
+    background-color: #EDF3FC
+    border-radius: 15px
+    height: 275px
+
+.contain2
+    background-color: #FBFCFE
+    height: 275px
+
+.contain3
+    background-color: #FBFCFE
+    height: 275px
+
+
+
+.tema1-block
+  display: flex
+
+
+  &__image1__tema1
+    width: 463px
+    height: 275px
+    position: absolute
+    aspect-ratio: 16 / 9
+    left: 0%
+    mask-image: linear-gradient(to right, black 70%, transparent 100%)
+    border-radius: 15px
+    background-size: cover !important
+    background-position: center !important
+    background-repeat: no-repeat
+
+  &__text1
+    position: absolute
+    top:305%
+    font-size: unset
+    left: 35%
+    margin: 5px 40px 20px 20px
+
+  &__image1__logo1
+    width: 90px
+    height: 90px
+    position: absolute
+    aspect-ratio: 16 / 9
+    left: 37%
+    top: 18%
+    background-size: cover !important
+    background-position: center !important
+    background-repeat: no-repeat
+  
+  &__image2__tema1
+    width: 285px
+    height: 231px
+    position: absolute
+    aspect-ratio: 16 / 9
+    left: 4%
+    border-radius: 15px
+    background-size: cover !important
+    background-position: center !important
+    background-repeat: no-repeat
+
+  &__fondo2__tema1
+    width: 100%
+    height: 231px
+    position: absolute
+    aspect-ratio: 16 / 9
+    left: 0%
+    border-radius: 15px
+    background-size: cover !important
+    background-position: center !important
+    background-repeat: no-repeat
+
+  &__text2
+    position: absolute
+    top: 7%
+    margin: 10px 100px 10px 10px
+    font-size: unset
+    left: 26%
+
+  &__image1__logo2
+    width: 70px
+    height: 70px
+    position: absolute
+    aspect-ratio: 16 / 9
+    left: 92%
+    top: 4%
+    background-size: cover !important
+    background-position: center !important
+    background-repeat: no-repeat
+    
+
+
+
+
+

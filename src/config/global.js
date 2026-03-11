@@ -1,17 +1,22 @@
 export default {
   global: {
-    Name: 'Nombre del recurso educativo',
-    Description: 'Descripción del RED',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
+    Name: 'Aditivos: usos y aplicaciones en la industria alimentaria.',
+    Description:
+      'Este componente formativo aborda de manera integrada las generalidades, usos, aplicaciones y control de los aditivos utilizados en la industria alimentaria, destacando su función tecnológica, clasificación, nomenclatura y normatividad vigente. El contenido permite comprender la relación entre el uso de aditivos, la calidad, la inocuidad y el análisis fisicoquímico de los alimentos, fortaleciendo criterios técnicos para su correcta aplicación.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.png'),
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.png'),
       },
     ],
   },
@@ -31,28 +36,142 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Tema 1',
+        titulo: 'Generalidades de los aditivos alimentarios',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Subtema 1',
+            titulo: 'Contexto histórico',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Objetivos y función',
+            hash: 't_1_2',
           },
         ],
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Tema 2',
+        titulo: 'Origen, tipos y clasificación de los aditivos',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo: 'Origen y tipos',
+            hash: 't_2_1',
+          },
+          {
+            numero: '2.2',
+            titulo: 'Clasificación funcional',
+            hash: 't_2_2',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Tema 3',
+        titulo: 'Usos y aplicaciones en la industria alimentaria',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '3.1',
+            titulo: 'Colorantes',
+            hash: 't_3_1',
+          },
+          {
+            numero: '3.2',
+            titulo: 'Conservantes',
+            hash: 't_3_2',
+          },
+          {
+            numero: '3.3',
+            titulo: 'Antioxidantes',
+            hash: 't_3_3',
+          },
+          {
+            numero: '3.4',
+            titulo: 'Edulcorantes',
+            hash: 't_3_4',
+          },
+          {
+            numero: '3.5',
+            titulo: 'Estabilizantes',
+            hash: 't_3_5',
+          },
+          {
+            numero: '3.6',
+            titulo: 'Reguladores de pH (Acidulantes)',
+            hash: 't_3_6',
+          },
+          {
+            numero: '3.7',
+            titulo: 'Potenciadores de sabor',
+            hash: 't_3_7',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema4',
+        numero: '4',
+        titulo: 'Nomenclatura y normatividad en etiquetado de aditivos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '4.1',
+            titulo:
+              'Estandarización y codificación internacional de aditivos alimentarios',
+            hash: 't_4_1',
+          },
+          {
+            numero: '4.2',
+            titulo: 'Estándares para etiquetar aditivos',
+            hash: 't_4_2',
+          },
+          {
+            numero: '4.3',
+            titulo: 'Normatividad de los aditivos',
+            hash: 't_4_3',
+          },
+          {
+            numero: '4.4',
+            titulo: 'Evaluación de seguridad y toxicidad en aditivos',
+            hash: 't_4_4',
+          },
+          {
+            numero: '4.5',
+            titulo:
+              'Seguridad e higiene en la gestión de aditivos alimentarios',
+            hash: 't_4_5',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Relación entre aditivos y análisis fisicoquímico',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: 'Pilares del análisis físicoquímico en aditivos',
+            hash: 't_5_1',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema6',
+        numero: '6',
+        titulo: 'Manejo y conversión de unidades de medida',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '6.1',
+            titulo: 'Principales unidades de medida y sus equivalencias',
+            hash: 't_6_1',
+          },
+        ],
       },
     ],
     subMenu: [

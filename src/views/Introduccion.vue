@@ -4,14 +4,48 @@
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
-        span
-          i.fas.fa-info
+        span i
       h1 Introducción
+
+    .row.align-items-center.mb-5
+      .col-md-3.col-sm-12
+        .intro-block__image(
+          :style="{'background-image': `url(${require('@/assets/curso/introduccion/fot1.svg')})`}"
+        )
+      .col-md-9.col-sm-12
+        .intro-block__text
+          p.mb-0
+            | Los alimentos procesados hacen parte fundamental de la dieta actual y su calidad depende, en gran medida, de los procesos y sustancias empleadas durante su elaboración. Entre estos elementos se encuentran los aditivos alimentarios, compuestos que cumplen funciones tecnológicas específicas y que inciden directamente en la estabilidad, apariencia, sabor e inocuidad de los productos.
     
-    figure.mb-5
-      .video.mb-2
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      figcaption Video: Leyenda del video
+    
+    .row.align-items-center.mb-5
+      .col-md-12.col-sm-12.azulC
+        .intro-block__image-Masc(
+          :style="{'background-image': `url(${require('@/assets/curso/introduccion/estrellaA.png')})`}"
+        )
+        .intro-block__image-Micro(
+          :style="{'background-image': `url(${require('@/assets/curso/introduccion/micro.svg')})`}"
+        )
+
+        .col-md-8.col-sm-12
+          .intro-block__text2
+            p.mb-0
+              | Comprender el origen, la clasificación, la función y la regulación de los aditivos permite interpretar de manera adecuada los análisis físicoquímicos aplicados a los alimentos y tomar decisiones informadas dentro de los procesos de control de calidad. Este componente desarrolla los conceptos esenciales y su aplicación práctica, promoviendo el uso responsable y normado de los aditivos en coherencia con las exigencias del sector alimentario.
+    
+    
+    .row.align-items-center.mb-5
+      .col-md-12.col-sm-12.azulOs
+        .podcast-content
+          .podcast-image(
+            :style="{'background-image': `url(${require('@/assets/curso/introduccion/podc.svg')})`}"
+          )
+          .podcast-player
+            .podcast-title Pódcast
+            .tarjeta-audio-container
+              TarjetaAudio.color-primario(
+                texto="Etiquetas bajo la lupa"
+                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+              )
 
 </template>
 
@@ -19,7 +53,8 @@
 export default {
   name: 'Introduccion',
   data: () => ({
-    // variables de vue
+    mostrarIndicadorAudio: true,
+    mostrarIndicadorTarjetaAudio: true,
   }),
   mounted() {
     this.$nextTick(() => {
@@ -32,4 +67,11 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.bloque-texto-g__img
+  width: 300px !important
+  height: 104px !important
+  border-radius: 15px
+  background-size: cover !important
+  background-position: center !important
+</style>

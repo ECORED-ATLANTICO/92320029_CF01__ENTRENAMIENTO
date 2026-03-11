@@ -2,7 +2,8 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum.
+    p El componente formativo Aditivos: usos y aplicaciones en la industria alimentaria, aborda las generalidades de los aditivos alimentarios, su origen, tipos y clasificación funcional, así como sus usos y aplicaciones en la industria alimentaria, con énfasis en colorantes, conservantes, antioxidantes, edulcorantes, estabilizantes, reguladores de pH y potenciadores de sabor. Se analizan sus funciones tecnológicas y su impacto sobre la calidad, la estabilidad fisicoquímica y las características organolépticas de los alimentos procesados.
+    p Asimismo, se desarrolla la nomenclatura, el etiquetado y la normatividad vigente, estableciendo la relación entre el uso de aditivos y el análisis fisicoquímico como herramienta de control de calidad e inocuidad. El componente integra el manejo y la conversión de unidades de medida como competencia transversal, fortaleciendo la correcta dosificación y el cumplimiento de la Ingesta Diaria Admisible (IDA), en coherencia con los estándares técnicos del sector alimentario.
     .row.justify-content-center
       .col-lg-10.mb-5.bgs.p-4.brad
         figure
