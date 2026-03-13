@@ -37,10 +37,38 @@
               p.mb-0
                   | Desde el Paleolítico, el ser humano ha utilizado aditivos como la sal, el ahumado y el zumo de limón para conservar alimentos. Con el desarrollo de la agricultura y la ganadería, se integraron el azafrán, la sal de nitro y el vinagre para mejorar la palatabilidad y gestionar excedentes.
           .tema1-block__image1__logo2(
-          :style="{'background-image': `url(${require('@/assets/curso/tema1/logo2.png')})`}"
+          :style="{'background-image': `url(${require('@/assets/curso/tema1/logo2.svg')})`}"
           )
-        
-    
+          .cita-bloque
+            .tema1-block__comilla1  
+              .cita-bloque__inner
+                i.fas.fa-quote-left
+                .cita-bloque__cuadro
+                p.cita-bloque__texto
+                  | Aunque su uso fue empírico hasta el siglo XVIII, los avances químicos y las demandas industriales del siglo XIX formalizaron el término "aditivo", logrando la aceptación legal de su inocuidad (Ibáñez, Irigoyen y Torre, 2003).
+                  p.cita-bloque__fuente
+                    | (Flessa & Huebner, 2021; Kimble & Massoud, 2017).
+                  i.fas.fa-quote-right
+
+          .bloque_fin1
+            img.masc__fin(:src="require('@/assets/curso/tema1/fondo_fin1.svg')")
+            img.logo3(:src="require('@/assets/curso/tema1/logo3.svg')")
+            img.logo3_1(:src="require('@/assets/curso/tema1/logo3.1.svg')")
+            p.bloque_fin1.texto-bloque
+              | Ingrese al siguiente enlace para ampliar información sobre las generalidades de los aditivos alimentarios: 
+              .mb-3.d-flex.justify-content-end
+                a.boton.color-acento-botone.me-3(:href="obtenerLink('https://www.youtube.com/watch?v=v0OVfIJS3UM')" target="_blank" )
+                  span Enlace
+                  i.fas.fa-link
+
+
+
+
+              
+            
+            
+                    
+              
         
 
 
